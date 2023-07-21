@@ -96,7 +96,6 @@ body {
 .menu-nav-list,
 .address-list {
   display: flex;
-  padding: 24px 0;
   gap: 40px;
 }
 .menu-nav-contact {
@@ -107,6 +106,7 @@ body {
   color: var(--secondary-bg-color);
 }
 .menu-nav-link {
+  padding: 24px 0;
   color: var(--secondary-bg-color);
 }
 .contact:hover,
