@@ -20,24 +20,28 @@
     <!-- HEADER -->
 
     <header class="header">
-      <div class="container">
+      <div class="header-container container">
         <nav class="nav">
-          <a href="./index.html" class="logo link">Web<span class="logo-blue">Studio</span></a>
-          <!-- nav list -->
-          <ul class="list">
-            <li class="item"><a href="./index.html" class="link">Studio</a></li>
-            <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
-            <li class="item"><a href="" class="link">Contacts</a></li>
+          <a class="logo-header link" href="./index.html"
+            >Web<span class="logo-blue">Studio</span></a
+          >
+          <ul class="menu-nav-list list">
+            <li class="menu-nav-item">
+              <a class="menu-nav-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="menu-nav-item">
+              <a class="menu-nav-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="menu-nav-item"><a class="menu-nav-link link" href="">Contacts</a></li>
           </ul>
         </nav>
-        <!-- adress -->
-        <address class="address">
-          <ul class="contacts list">
-            <li class="item">
-              <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+        <address>
+          <ul class="address-list list">
+            <li class="menu-nav-contact">
+              <a href="mailto:info@devstudio.com" class="contact link">info@devstudio.com</a>
             </li>
-            <li class="item">
-              <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+            <li class="menu-nav-contact">
+              <a href="tel:+110001111111" class="contact link">+11 (000) 111-11-11</a>
             </li>
           </ul>
         </address>
@@ -45,80 +49,36 @@
     </header>
 
     <!-- MAIN -->
+
     <main>
-      <!-- gallery buttons -->
+      <!-- GALLERY BUTTONS -->
+
       <section class="gallery">
         <div class="container">
           <h1 hidden>Buttons</h1>
-          <ul class="list">
-            <li class="item"><button type="button" class="btn-gallery">All</button></li>
-            <li class="item"><button type="button" class="btn-gallery">Web Site</button></li>
-            <li class="item"><button type="button" class="btn-gallery">App</button></li>
-            <li class="item"><button type="button" class="btn-gallery">Design</button></li>
-            <li class="item"><button type="button" class="btn-gallery">Marketing</button></li>
+          <ul class="btn-menu list">
+            <li class="btn-item"><button class="btn-modal" type="button">All</button></li>
+            <li class="btn-item"><button class="btn-modal" type="button">Web Site</button></li>
+            <li class="btn-item"><button class="btn-modal" type="button">App</button></li>
+            <li class="btn-item"><button class="btn-modal" type="button">Design</button></li>
+            <li class="btn-item"><button class="btn-modal" type="button">Marketing</button></li>
           </ul>
-          <!-- gallery cards -->
-          <ul class="list">
+
+          <!-- GALLERY CARDS -->
+
+          <ul class="gallery list">
             <li class="gallery-card">
               <a class="link" href="">
                 <img
+                  class="gallery-img"
                   src="./images/content-card-1.jpg"
                   alt="Banking App Interface Concept"
                   width="360"
+                  height="300"
                 />
-                <div class="info">
-                  <h2 class="title">Banking App Interface Concept</h2>
-                  <p class="text">App</p>
-                </div>
-              </a>
-            </li>
-
-            <li class="gallery-card">
-              <a class="link" href="">
-                <img src="./images/content-card-2.jpg" alt="Cashless Payment" width="360" />
-                <div class="info">
-                  <h2 class="title">Cashless Payment</h2>
-                  <p class="text">Marketing</p>
-                </div>
-              </a>
-            </li>
-
-            <li class="gallery-card">
-              <a class="link" href="">
-                <img src="./images/content-card-3.jpg" alt="Meditation App" width="360" />
-                <div class="info">
-                  <h2 class="title">Meditation App</h2>
-                  <p class="text">App</p>
-                </div>
-              </a>
-            </li>
-
-            <li class="gallery-card">
-              <a class="link" href="">
-                <img src="./images/content-card-4.jpg" alt="Taxi Service" width="360" />
-                <div class="info">
-                  <h2 class="title">Taxi Service</h2>
-                  <p class="text">Marketing</p>
-                </div>
-              </a>
-            </li>
-
-            <li class="gallery-card">
-              <a class="link" href="">
-                <img src="./images/content-card-5.jpg" alt="Screen Illustrations" width="360" />
-                <div class="info">
-                  <h2 class="title">Screen Illustrations</h2>
-                  <p class="text">Design</p>
-                </div>
-              </a>
-            </li>
-
-            <li class="gallery-card">
-              <a class="link" href="">
-                <img src="./images/content-card-6.jpg" alt="Online Courses" width="360" />
-                <div class="info">
-                  <h2 class="title">Online Courses</h2>
-                  <p class="text">Marketing</p>
+                <div class="gallery-content">
+                  <h2 class="features-item-title">Banking App Interface Concept</h2>
+                  <p class="features-text">App</p>
                 </div>
               </a>
             </li>
@@ -126,33 +86,127 @@
             <li class="gallery-card">
               <a class="link" href="">
                 <img
+                  class="gallery-img"
+                  src="./images/content-card-2.jpg"
+                  alt="Cashless Payment"
+                  width="360"
+                  height="300"
+                />
+                <div class="gallery-content">
+                  <h2 class="features-item-title">Cashless Payment</h2>
+                  <p class="features-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="gallery-card">
+              <a class="link" href="">
+                <img
+                  class="gallery-img"
+                  src="./images/content-card-3.jpg"
+                  alt="Meditation App"
+                  width="360"
+                  height="300"
+                />
+                <div class="gallery-content">
+                  <h2 class="features-item-title">Meditation App</h2>
+                  <p class="features-text">App</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="gallery-card">
+              <a class="link" href="">
+                <img
+                  class="gallery-img"
+                  src="./images/content-card-4.jpg"
+                  alt="Taxi Service"
+                  width="360"
+                  height="300"
+                />
+                <div class="gallery-content">
+                  <h2 class="features-item-title">Taxi Service</h2>
+                  <p class="features-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="gallery-card">
+              <a class="link" href="">
+                <img
+                  class="gallery-img"
+                  src="./images/content-card-5.jpg"
+                  alt="Screen Illustrations"
+                  width="360"
+                  height="300"
+                />
+                <div class="gallery-content">
+                  <h2 class="features-item-title">Screen Illustrations</h2>
+                  <p class="features-text">Design</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="gallery-card">
+              <a class="link" href="">
+                <img
+                  class="gallery-img"
+                  src="./images/content-card-6.jpg"
+                  alt="Online Courses"
+                  width="360"
+                  height="300"
+                />
+                <div class="gallery-content">
+                  <h2 class="features-item-title">Online Courses</h2>
+                  <p class="features-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="gallery-card">
+              <a class="link" href="">
+                <img
+                  class="gallery-img"
                   src="./images/content-card-7.jpg"
                   alt="Instagram Stories Concept"
                   width="360"
+                  height="300"
                 />
-                <div class="info">
-                  <h2 class="title">Instagram Stories Concept</h2>
-                  <p class="text">Design</p>
+                <div class="gallery-content">
+                  <h2 class="features-item-title">Instagram Stories Concept</h2>
+                  <p class="features-text">Design</p>
                 </div>
               </a>
             </li>
 
             <li class="gallery-card">
               <a class="link" href="">
-                <img src="./images/content-card-8.jpg" alt="Organic Food" width="360" />
-                <div class="info">
-                  <h2 class="title">Organic Food</h2>
-                  <p class="text">Web Site</p>
+                <img
+                  class="gallery-img"
+                  src="./images/content-card-8.jpg"
+                  alt="Organic Food"
+                  width="360"
+                  height="300"
+                />
+                <div class="gallery-content">
+                  <h2 class="features-item-title">Organic Food</h2>
+                  <p class="features-text">Web Site</p>
                 </div>
               </a>
             </li>
 
             <li class="gallery-card">
               <a class="link" href="">
-                <img src="./images/content-card-9.jpg" alt="Fresh Coffee" width="360" />
-                <div class="info">
-                  <h2 class="title">Fresh Coffee</h2>
-                  <p class="text">Web Site</p>
+                <img
+                  class="gallery-img"
+                  src="./images/content-card-9.jpg"
+                  alt="Fresh Coffee"
+                  width="360"
+                  height="300"
+                />
+                <div class="gallery-content">
+                  <h2 class="features-item-title">Fresh Coffee</h2>
+                  <p class="features-text">Web Site</p>
                 </div>
               </a>
             </li>
@@ -165,7 +219,9 @@
 
     <footer class="footer">
       <div class="container">
-        <a class="logo link" href="./index.html">Web<span class="logo-white">Studio</span> </a>
+        <a href="./index.html" class="logo-footer link"
+          >Web<span class="logo-white">Studio</span></a
+        >
         <p class="text-white">
           Increase the flow of customers and sales for your business with digital marketing & growth
           solutions.
