@@ -238,6 +238,7 @@ body {
   padding: 32px 0;
 }
 .team-item-title {
+  margin-bottom: 8px;
   text-align: center;
 }
 .team-text {
